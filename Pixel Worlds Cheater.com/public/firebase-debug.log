@@ -1,0 +1,84 @@
+[debug] [2022-01-30T11:55:50.144Z] ----------------------------------------------------------------------
+[debug] [2022-01-30T11:55:50.146Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Ville\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-01-30T11:55:50.146Z] CLI Version:   10.1.2
+[debug] [2022-01-30T11:55:50.146Z] Platform:      win32
+[debug] [2022-01-30T11:55:50.146Z] Node Version:  v16.13.2
+[debug] [2022-01-30T11:55:50.147Z] Time:          Sun Jan 30 2022 13:55:50 GMT+0200 (Itä-Euroopan normaaliaika)
+[debug] [2022-01-30T11:55:50.147Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-30T11:55:50.195Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-30T11:55:50.196Z] > authorizing via signed-in user (ville.kiviaho1@gmail.com)
+[debug] [2022-01-30T11:55:50.196Z] [iam] checking project pixel-worlds-cheater for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-01-30T11:55:50.198Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/pixel-worlds-cheater:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-01-30T11:55:51.130Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 30 Jan 2022 11:55:41 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=716","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-30T11:55:51.132Z] > refreshing access token with scopes: []
+[debug] [2022-01-30T11:55:51.132Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-30T11:55:51.313Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sun, 30 Jan 2022 11:55:41 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-30T11:55:51.319Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pixel-worlds-cheater [none]
+[debug] [2022-01-30T11:55:51.783Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pixel-worlds-cheater 200
+[debug] [2022-01-30T11:55:51.783Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pixel-worlds-cheater {"projectId":"pixel-worlds-cheater","projectNumber":"289000824326","displayName":"Pixel Worlds Cheater","name":"projects/pixel-worlds-cheater","resources":{"hostingSite":"pixel-worlds-cheater","storageBucket":"pixel-worlds-cheater.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'pixel-worlds-cheater'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-01-30T11:55:51.788Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-01-30T11:55:51.788Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-30T11:55:51.998Z] <<< HTTP RESPONSE 200 {"date":"Sun, 30 Jan 2022 11:55:42 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-30T11:55:52.002Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/pixel-worlds-cheater/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-01-30T11:55:53.365Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Sun, 30 Jan 2022 11:55:43 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-30T11:55:53.365Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-01-30T11:55:53.636Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Sun, 30 Jan 2022 11:55:43 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/pixel-worlds-cheater/versions",
+        "path": "/v1beta1/sites/pixel-worlds-cheater/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/pixel-worlds-cheater/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
